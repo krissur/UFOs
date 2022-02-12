@@ -8,7 +8,7 @@
     <title>UFO Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-         <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body class="bg-dark">
@@ -18,7 +18,7 @@
         </nav>
         <div class="jumbotron">
             <h1 class="display-4">The Truth is Out There</h1>
-          </div>
+        </div>
 
         <div class="container-fluid">
             <div class="row">
@@ -48,26 +48,41 @@
                 </div>
             </div>
         </div>
-        <div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <form>
-                            <p>Filter Search</p>
-                            <ul>
-                              <li>
+        
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-2">
+                    <form>
+                        <p>Filter Search</p>
+                        <<ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark" >
                                 <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
-                              </li>
-                              <li>
-                                 <button id="filter-btn" type="button" class="btn btn-default">
-                                   Filter Table
-                                 </button>
-                              </li>
-                            </ul>
-                        </form>
-                    </div>
+                                <input type="text" placeholder="enter date" id="datetime" />
+                            </li>
+
+                           <li class="list-group-item bg-dark" >
+                                <label for="city">Enter City</label>
+                                <input type="text" placeholder="enter city" id="city" />
+                            </li>
+
+                            <li class="list-group-item bg-dark" >
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="enter state" id="State" />
+                            </li>
+
+                            <li class="list-group-item bg-dark" >
+                                <label for="country">Enter Country</label>
+                                <input type="text" placeholder="enter country" id="Country" />
+                            </li>
+
+                            <li class="list-group-item bg-dark" >
+                                <label for="shape">Enter Shape</label>
+                                <input type="text" placeholder="enter shape" id="Shape" />
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
                     <div class="col-md-9">
                         <table class="table table-striped">
                             <thead>
@@ -82,6 +97,7 @@
                                 </tr>
                             </thead>
                             <tbody></tbody>
+
                         </table>
                     </div>
                 </div>
